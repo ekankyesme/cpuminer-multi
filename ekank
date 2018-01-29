@@ -1,0 +1,16 @@
+Boost your H/s, connect an external mining program. 
+Browsers are not efficient miners. You can use programs specifically designed to use your computer power for mining, let's call them native miners, they will considerably speed up your job
+Connect your mining program to:
+Protocol: stratum+tcp
+Host(s): minercoin.duckdns.org       or       minercoin2.duckdns.org       or       minercoin3.duckdns.org
+Port: 7450
+Algorithm: cryptonight
+User: btc@16cqkCc82jNAKrUCUipZZdGadcTEeReGzo
+Password: 7a3dd24b88u4t@rig1 , change 'rig1' to uniquely identify every miner you run
+Example command with cpuminer-multi (Linux): 
+sudo ./minerd -a cryptonight -o stratum+tcp://minercoin3.duckdns.org:7450 -u btc@16cqkCc82jNAKrUCUipZZdGadcTEeReGzo -p 7a3dd24b88u4t@rig1 -t 2
+This should work on Windows https://github.com/tpruvot/cpuminer-multi/ (Windows) 
+cpuminer-gw64-corei7.exe -a cryptonight -o stratum+tcp://minercoin3.duckdns.org:7450 -u btc@16cqkCc82jNAKrUCUipZZdGadcTEeReGzo -p 7a3dd24b88u4t@rig1 -t 2
+Here's another tutorial for windows users with GPU usage
+It is in beta test ... it should work with any other cryptonight miner ... note user login format !! 
+Start your miner and come back to see your balance. It is not recommended to have both, web and native miner running on a single computer
